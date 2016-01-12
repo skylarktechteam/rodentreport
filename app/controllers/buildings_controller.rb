@@ -8,7 +8,7 @@ class BuildingsController < ApplicationController
 
    respond_to do |format|
    format.html #index.html.erb
-   format.json #{render :json => @buildings}
+ #  format.json #{render :json => @buildings}
   end
   	
   def new
