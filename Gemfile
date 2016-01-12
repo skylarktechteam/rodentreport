@@ -1,17 +1,18 @@
 source 'https://rubygems.org'
 
 #declare Ruby Version
-ruby '2.2.3'
+ruby '2.2.3', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 # gem required by Heroku
 gem 'pg', group: :production
+# gem required by Heroku
 gem 'rails_12factor', group: :production
-# Use SCSS for stylesheets
-gem 'simple_form', '~> 3.1.1'
 #Use Simple Form to build forms
+gem 'simple_form', '~> 3.1.1'
+# Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -34,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
+# Use Unicorn as the app server in Heroku
 gem 'unicorn'
 
 # Use Capistrano for deployment
