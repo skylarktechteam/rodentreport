@@ -9,6 +9,8 @@ gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
+gem 'simple_form', '~> 3.1.1'
+#Use Simple Form to build forms
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -48,8 +50,7 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
- #Use Simple Form to build forms
- gem 'simple_form', '~> 3.1.1'
+ 
 
 
 end
